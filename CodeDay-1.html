@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's Start Code</title>
+</head>
+
+<body>
+    <h2>CodeDay-1</h2>
+    <script>
+        // Q.1 Find Even and Odd Number 
+        //method-1
+        // function checkNumber(Num) {
+        //     if (Num % 2 == 0) {
+        //         return `${Num} => Is Even Number`
+        //     } else {
+        //         return `${Num} => Is Odd Number`
+        //     }
+        // }
+        // console.log(checkNumber(55));
+        // console.log(checkNumber(6.0));
+        // console.log(checkNumber(55));
+        // console.log(checkNumber(55));
+        // console.log(checkNumber(55));
+        // //Method -2
+        // function checkNum(n) {
+        //     return (n % 2 == 0)
+        // }
+        // let n = 123;
+        // n = 24;
+
+        // checkNum(n) ? document.write(` ${n} => even`) : document.write(`${n} => is Odd `)
+
+
+        // // Q.2 Find last digit in a number
+        // // method -1 
+        // function firstDigit(number) {
+        //     while (number >= 10) {
+        //         number /= 10;
+        //         return Math.floor(number /= 10);
+        //     }
+        // }
+        // function lastDigit(number) {
+        //     return Math.round(number % 10);
+        // }
+        // console.log(firstDigit(345));
+        // console.log(lastDigit(345));
+
+        // // Q.3 Count digits in a number
+        // function checkLength(para) {
+        //     return para.toString().length
+        // }
+        // let i = checkLength(123456778);
+
+        // console.log(`total length is ${i}`);
+
+
+        // //Q.4 reverse a number 
+
+        // // method -1 reverse method 
+        // function reverseNum(number) {
+        //     return number.toString().split('').reverse().join('')
+        // }
+        // console.log(reverseNum(65453563));
+        // // method-2 loop method 
+        // function revNum(number) {
+        //     let number1 = number.toString()
+        //     let reverseNumber = "";
+        //     for (let i = number1.length - 1; i >= 0; i--) {
+        //         reverseNumber += number1[i];
+        //     }
+        //     return reverseNumber
+        // }
+        // console.log(revNum(768765));
+
+        // // Q-5 Find power of a number
+        // function powNumber(x, n) {
+        //     let pow = 1;
+        //     for (let i = 0; i < n; i++) {
+        //         pow *= x;
+
+        //     }
+        //     return pow
+        // }
+        // // answer  2*2*2
+        // console.log(powNumber(2, 3));
+
+        // function mathPow(x, n) {
+        //     if (n == 0) {
+        //         return n = 1;
+        //     }
+        //     if (x == 0) {
+        //         return x = 0;
+        //     }
+        //     return x * mathPow(x, n - 1)
+
+        // }
+        // console.log(mathPow(3, 2));
+
+        // //Q-6 GCD - greatest common factor number that divides
+        // function gcd(a, b) {
+        //     let result = Math.min(a, b);
+        //     while (result >= 0) {
+        //         if (a % result == 0 && b % result == 0) {
+        //             break;
+        //         }
+        //         result--;
+        //     }
+        //     return result;
+        // }
+        // // result
+
+        // let a = 98;
+        // let b = 56;
+        // console.log("GCD of ", a, " and ", b, " is ", gcd(a, b));
+
+        // // Q-7 Print all divisors of a number
+
+        // let array = '';
+        // let bisult;
+        // function divNum(n) {
+        //     for (let i = 0; i <= n; i++) {
+        //         if (n % i == 0) {
+        //             bisult = `${array += i} `;
+        //         }
+        //     }
+        //     return ` let check ${bisult}`;
+        // }
+        // let m = 553;
+        // console.log(divNum(m));
+
+        // console.log(divNum(50));
+
+        // Q.8  prime number 
+        function primeNumber(n) {
+            let count = 0;
+
+            for (let i = 2; i <= n; i++) {
+                if (n % i == 0) {
+                    count++;
+                }
+            }
+
+
+    
+
+            if (count > 1) {
+                console.log("Not a prime number");
+            } else {
+                console.log("A prime number");
+            }
+        }
+        primeNumber(9);
+
+    </script>
+</body>
+
+</html>
